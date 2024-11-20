@@ -1,1 +1,61 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мемы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#memes">Мемы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="memes" class="section">
+        <h2>Мемы</h2>
+        <div class="memes-gallery">
+         <img src="images/meme1.jpg" alt="Мем 1">
+            <img src="images/meme2.jpg" alt="Мем 2">
+            <img src="images/meme3.jpg" alt="Мем 3">
+            <img src="images/meme4.jpg" alt="Мем 4">
+            <img src="images/meme5.jpg" alt="Мем 5">
+            <img src="images/meme6.jpg" alt="Мем 6">
+            <img src="images/meme7.jpg" alt="Мем 7">
+            <img src="images/meme8.jpg" alt="Мем 8">
+            <img src="images/meme9.jpg" alt="Мем 9">
+            <img src="images/meme10.jpg" alt="Мем 10">
+            <img src="images/meme11.jpg" alt="Мем 11">
+            <img src="images/meme12.jpg" alt="Мем 12">
+            <img src="images/meme13.jpg" alt="Мем 13">
+            <img src="images/meme14.jpg" alt="Мем 14">
+            <img src="images/meme15.jpg" alt="Мем 15">
+            <img src="images/meme16.jpg" alt="Мем 16">
+            <img src="images/meme17.jpg" alt="Мем 17">
+            <img src="images/meme18.jpg" alt="Мем 18">
+            <img src="images/meme19.jpg" alt="Мем 19">
+            <img src="images/meme20.jpg" alt="Мем 20">
+        </div>
+    </section>
+
+<footer>
+    <p>&copy; 2024 Сайт с мемами. <a href="#" id="openImage">Все права защищены</a>.</p>
+</footer>
+    <!-- Кнопка переключения темы -->
+    <button id="themeToggle" class="theme-toggle"></button>
+
+    <script>
+        document.getElementById('themeToggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                document.body.style.backgroundColor = '#fff';
+            } else {
+                document.body.style.backgroundColor = '#2b2b2b';
+            }
+        });
+    </script>
+</body>
+</html>
